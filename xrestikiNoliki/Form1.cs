@@ -40,5 +40,42 @@ namespace xrestikiNoliki
             btn[7] = button8;
             btn[8] = button9;
         }
+
+        private void Button_Click(object sender, EventArgs e)
+        {
+            if (t == "Крестики")
+            {
+                for (int i = 0; i < btn.Length; i++)
+                {
+                    if (sender == btn[i])
+                    {
+                        btn[i].Text = "X";
+                        label1.Text = "Ходят 0";
+                        t = "1";
+                        btn[i].Enabled = false;
+                        array[i] = 1;
+                        break;
+                    }
+                }
+            }
+            else //нолики
+            {
+                for (int i = 0; i < btn.Length; i++)
+                {
+                    if (sender == btn[i])
+                    {
+                        btn[i].Text = "O";
+                        label1.Text = "Ходят X";
+                        t = "Крестики";
+                        btn[i].Enabled = false;
+                        array[i] = 2;
+                        break;
+                    }
+                }
+            }
+            chekWin();
+        }
     }
+    
+
 }
