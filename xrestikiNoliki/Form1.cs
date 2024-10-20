@@ -75,6 +75,114 @@ namespace xrestikiNoliki
             }
             chekWin();
         }
+        void chekWin()
+        {
+            if (button1.Text == button2.Text && button2.Text == button3.Text)
+            {
+                if (button1.Text != "")
+                {
+                    MessageBox.Show("Победили" + button1.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            if (button4.Text == button5.Text && button5.Text == button6.Text)
+            {
+                if (button4.Text != "")
+                {
+                    MessageBox.Show("Победили" + button4.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            if (button7.Text == button8.Text && button8.Text == button9.Text)
+            {
+                if (button8.Text != "")
+                {
+                    MessageBox.Show("Победили" + button8.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            if (button1.Text == button4.Text && button4.Text == button7.Text)
+            {
+                if (button1.Text != "")
+                {
+                    MessageBox.Show("Победили" + button1.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            if (button2.Text == button5.Text && button5.Text == button8.Text)
+            {
+                if (button2.Text != "")
+                {
+                    MessageBox.Show("Победили" + button2.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            if (button3.Text == button6.Text && button6.Text == button9.Text)
+            {
+                if (button3.Text != "")
+                {
+                    MessageBox.Show("Победили" + button3.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            if (button1.Text == button5.Text && button5.Text == button9.Text)
+            {
+                if (button1.Text != "")
+                {
+                    MessageBox.Show("Победили" + button1.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            if (button3.Text == button5.Text && button5.Text == button7.Text)
+            {
+                if (button5.Text != "")
+                {
+                    MessageBox.Show("Победили" + button3.Text);
+                    for (int i = 0; i < btn.Length; i++)
+                    {
+                        btn[i].Enabled = false;
+                    }
+                }
+            }
+            bool isDraw = true;
+            for (int i = 0; i < btn.Length; i++)
+            {
+                if (btn[i].Text == "")
+                {
+                    isDraw = false;
+                    break;
+                }
+                if (!isDraw) break;
+
+            }
+            if (isDraw)
+            {
+                MessageBox.Show("Ничья!");
+            }
+
+        }
+
     }
     
 
