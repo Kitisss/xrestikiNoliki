@@ -182,6 +182,14 @@ namespace xrestikiNoliki
             }
 
         }
+        private void button10_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < btn.Length; i++)
+            {
+                btn[i].Enabled = true;
+                btn[i].Text = "";
+            }
+        }
 
     }
     
